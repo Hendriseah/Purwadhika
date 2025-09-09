@@ -7,7 +7,9 @@ function printtriangle(height) {
         let row = "";
 
         for (let j = 1; j <= i; j++) {
-            let num = counter < 10 ? "0" + counter : counter;
+            let num = counter < 10 
+            ? "0" + counter // if
+            : counter; // else
             row += num + " ";
             counter++;
         }
